@@ -1,4 +1,4 @@
-## 1.1: Four Ways to Represent a Function
+# 1.1: Four Ways to Represent a Function
 ## Functions
 - Functions arise when one quantity depends on another (independent variable $\to$ dependent variable))
   - The area of a circle ($A$), which is dependent on the radius ($r$). This is given by the equation $A = \pi r^2$
