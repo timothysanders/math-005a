@@ -59,6 +59,7 @@
   - Example is $f(x) = \sin{x}$; $\sin{x}$ means the sine of an angle whose radian measure is $x$
 - An important property of sine and cosine functions is that they are periodic functions and have a period of $2\pi$
 - The tangent function, $\tan{x} = \frac{\sin{x}}{\cos{x}}$ has a period of $\pi$ and a range of $(-\infty, \infty)$
+- For the graphs of secant, cosecant, there are vertical asymptotes where the graphs of cosine and sine are equal to 0 
 
 ## Exponential Functions
 - An **exponential function**, $f(x) = b^x$ (where $b$ is a positive constant), are useful for modeling many natural phenomena
