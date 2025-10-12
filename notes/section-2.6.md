@@ -1,0 +1,61 @@
+# 2.6: Implicit Differentiation
+- Functions that we have covered so far express one variable explicitly in terms of another
+- Examples
+  - $y = \sqrt{x^3 + 1}$
+  - $y = x\sin x$
+  - $y = f(x)$ (generally)
+- Some functions are defined by an implicit relationship between $x$ and $y$
+- Examples
+  - $x^2 + y^2 = 25$
+  - $x^3 + y^3 = 6xy$ (folium of Descartes)
+
+## Implicit Differentiation
+- We don't need to solve an equation for $y$ in terms of $x$ to find the derivative of $y$, but can use the method of **implicit differentiation**
+  - This means to differentiate both sides of the equation with respect to $x$ and then solve the resulting equation for $\frac{dy}{dx}$
+- Example: Find $\frac{dy}{dx}$ for $x^2 + y^2 = 25$. Then find equation of the tangent to the circle at the point $(3, 4)$
+  - Differentiate both sides
+    - $\frac{d}{dx}(x^2 + y^2) = \frac{d}{dx}(25)$
+    - $\frac{d}{dx}(x^2) + \frac{d}{dx}(y^2) = 0$
+      - We have to remember that $y$ is a function of $x$ and use the Chain rule
+    - $\frac{d}{dx}(y^2) = \frac{d}{dx}(y^2)\frac{dy}{dx} = 2y\frac{dy}{dx}$
+    - $2x + 2y\frac{dy}{dx} = 0$
+  - Now solve for $\frac{dy}{dx}$
+    - $\frac{dy}{dx} = -\frac{x}{y}$
+  - Then we can find our equation of the tangent at $(3, 4)$
+    - $\frac{dy}{dx} = -\frac{3}{4}$ (this is our slope)
+    - Put into point-slope form: $y - y_1 = m(x - x_1)$
+    - $y - 4 = -\frac{3}{4}(x - 3)$ or $3x + 4y = 25$
+- Example: Solve the same equation in terms of $y$
+  - $x^2 + y^2 = 25 \to y = \pm \sqrt{25 - x^2}$
+  - Because the point $(3, 4)$ is on the upper semi-circle, we use $f(x) = \sqrt{25 - x^2}$ and use the chain rule
+  - $f'(x) = \frac{1}{2}(25 - x^2)^{-\frac{1}{2}}\frac{d}{dx}(25 - x^2)$
+  - $= \frac{1}{2}(25 - x^2)^{-\frac{1}{2}}(-2x) = -\frac{x}{\sqrt{25 - x^2}}$
+  - Then use the point $(3, 4)$
+    - $f'(3) = -\frac{3}{\sqrt{25 - 3^2}} = -\frac{3}{4}$
+- Example: Find $y'$ if $\sin(x + y) = y^2\cos x$
+  - Differentiate implicitly with respect to $x$ and remembering that $y$ is a function of $x$, we get
+    - $\cos(x + y) \cdot (1 + y') = y^2(-\sin x) + (\cos x)(2yy')$
+  - Collect the terms that involve $y'$
+    - $\cos(x + y) + y^2\sin x = (2y\cos x)y' - \cos(x + y) \cdot y'$
+  - Which gives us
+    - $y' = \frac{y^2\sin x + \cos(x + y)}{2y\cos x - \cos(x + y)}$
+
+## Second Derivatives of Implicit Functions
+- Example: find $y''\text{ if }x^4 + y^4 = 16$
+  - Differentiate implicitly with respect to $x$
+    - $4x^3 + 4y^3y' = 0$
+      - Step by step:
+        - $\frac{d}{dx}(x^4 + y^4) = \frac{d}{dx}(16)$
+        - $\frac{d}{dx}(x^4) + \frac{d}{dx}(y^4) = 0$ (derivative of constant is 0)
+        - $\frac{d}{dx}(x^4) = 4x^3$ (power rule)
+        - Chain rule on $y^4 = (y(x))^4 = \frac{d}{dx}(y^4)\cdot\frac{dy}{dx} = 4y^3 \cdot y'$
+        - $4x^3 + 4y^3y' = 0$
+    - $y' = -\frac{x^3}{y^3}$ (solve for $y'$)
+  - Find $y''$ using the Quotient Rule and remembering that $y$ is a function of $x$
+    - $y'' = \frac{d}{dx}(-\frac{x^3}{y^3}) = -\frac{y^3(d/dx)(x^3) - x^3(d/dx)(y^3)}{(y^3)^2}$
+    - $= -\frac{y^3\cdot 3x^2 - x^3(3y^2y')}{y^6}$
+  - Substitute our original derivative in ($-\frac{x^3}{y^3}$)
+    - $y'' = -\frac{3x^2y^3 - 3x^3y^2(-\frac{x^3}{y^3})}{y^6}$
+    - $= -\frac{3(x^2y^4 + x^6)}{y^7} = -\frac{3x^2(y^4 + x^4)}{y^7}$
+  - Answer simplifies to
+    - $y'' = -\frac{3x^2(16)}{y^7} = -48\frac{x^2}{y^7}$
