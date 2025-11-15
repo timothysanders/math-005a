@@ -20,14 +20,14 @@
   - $\frac{d}{dx}(\tan x) = \sec^2x$
 - Derivatives of all trig functions are shown below, remember, they only work when $x$ is in radians
 
-| Original function    | Derivative     |
-|----------------------|----------------|
-| \frac{d}{dx}(\sin x) | \cos x         |
-| \frac{d}{dx}(\cos x) | -\sin x        |
-| \frac{d}{dx}(\tan x) | \sec^2x        |
-| \frac{d}{dx}(\csc x) | -\csc x \cot x |
-| \frac{d}{dx}(\sec x) | \sec x \tan x  |
-| \frac{d}{dx}(\cot x) | -\csc^2 x      |
+| Original function      | Derivative       |
+|------------------------|------------------|
+| $\frac{d}{dx}(\sin x)$ | $\cos x$         |
+| $\frac{d}{dx}(\cos x)$ | $-\sin x$        |
+| $\frac{d}{dx}(\tan x)$ | $\sec^2x$        |
+| $\frac{d}{dx}(\csc x)$ | $-\csc x \cot x$ |
+| $\frac{d}{dx}(\sec x)$ | $\sec x \tan x$  |
+| $\frac{d}{dx}(\cot x)$ | $-\csc^2 x$      |
 - Notice that minus signs go with the derivatives of the "cofunctions" (cosine, cosecant, cotangent)
 - Trig functions are often used to model real-world phenomena, such as vibrations, waves, etc.
 
