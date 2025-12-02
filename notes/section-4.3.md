@@ -12,6 +12,16 @@
 - The abbreviated name of this theorem is FTC1 and it says that the derivative of a definite integral with respect to its upper limit is the integrand evaluated at the upper limit
 - Using Leibniz notation for derivatives, FTC1 can be written as $$\frac{d}{dx}\int_a^x f(t)\ dt = f(x)$$ when $f$ is continuous
   - This function says that if we first integrate $f$ and then differentiate the result, we get back to the original function $f$
+#### Examples
+- Example 1: $g(x) = \int_0^xf(t)\ dt$, find the values of $g(0)$, $g(1)$, $g(2)$, $g(3)$, $g(4)$, and $g(5)$
+  - ![Graph of $f(t)$](figures/figure-4.3.2.png)
+  - First, notice that $g(0) = \int_0^0f(t)\ dt = 0$
+  - $g(1)$ is the area of a triangle; $g(1) = \int_0^1f(t)\ dt = \frac{1}{2}(1 \cdot 2) = 1$
+  - To find $g(2)$, add the area of a rectangle to $g(1)$
+    - $g(2) = \int_0^2f(t)\ dt = \int_0^1f(t)\ dt + \int_1^2f(t)\ dt = 1 + (1 \cdot 2) = 3$
+  - Estimate area under $f$ from 2 to 3 is about 1.3, so $g(3) = g(2) + \int_2^3f(t)\ dt \approx 3 + 1.3 = 4.3$
+  - For $t \gt 3$, $f(t)$ is negative so we start subtracting areas
+  - ![Graph of net area](figures/figure-4.3.3.png)
 
 ## The Fundamental Theorem of Calculus, Part 2
 - The second part of the Fundamental Theorem of Calculus provides us with a simpler way to evaluate integrals
